@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IT Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet"  href="css/style.css">   
+         <script>
+          function handleSubmit(event){
+            event.preventDefault();
+            var username = document.querySelector("#username").value;
+            var password = document.querySelector("#password").value;
+            if(username.trim() === ""|| password.trim() === ""){
+              alert("please enter both username and password");
+              return;
+            }
+              
+            console.log("Username",username);
+            console.log("Password",password);
+            alert("Login Successfull  Click OK to continue");
+            window.location.href = "sample.html";
+
+                     }
+         </script>
+        </head>
+<body>
+  <div class="wrapper">      
+    <form onsubmit="handleSubmit(event)">
+    <h1>Login</h1>
+<div class="input-box">
+<input type="text" id="username" placeholder="enter your username" >
+</div>
+<div class="input-box">
+<input type="password" id="password" placeholder="enter your password " >
+</div>
+<div class="remember-forgot">
+<label>
+<input type="checkbox" >Remember me</label>
+ <a href="#" >Forgot password?</a>
+</div>
+<pre>      <button type="submit"">  Submit</button>          <button>   rest</button></pre>
+<div class="register-link">
+<p>don't you have a account ?<a href="signup.html" color:black;>Signup</a></p>
+</div>
+</form>
+</div>
+</body>
+</html>

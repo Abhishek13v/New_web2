@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Booking Form</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+        
+                // Get form values
+                let tripType = document.querySelector("input[name='tripType']:checked").value;
+                let departure = document.getElementById("departure").value.trim();
+                let arrival = document.getElementById("arrival").value.trim();
+                let departureDate = document.getElementById("departureDate").value;
+                let returnDate = document.getElementById("returnDate").value;
+                let adults = document.getElementById("adults").value;
+                let seniors = document.getElementById("seniors").value;
+        
+                // Validate required fields
+                if (!departure || !arrival || !departureDate || !adults) {
+                    alert("Please fill in all required fields.");
+                    return;
+                }
+        
+                // Save data to local storage
+                let bookingData = { tripType, departure, arrival, departureDate, returnDate, adults, seniors };
+                localStorage.setItem("booking", JSON.stringify(bookingData));
+        
+                // Show confirmation and redirect
+                alert("Booking saved successfully!");
+            });
+        });
+        </script>
+
+
+</head>
+<body>
+    <div class="form-container">
+        <h1> Booking Form</h1>
+        <p>Fly with us, your journey begins here!</p>
+
+        <form>
+            <div class="form-row">
+                <label>Trip Type</label>
+                <div class="radio-group">
+                    <input type="radio" id="roundtrip" name="tripType" value="roundtrip" checked>
+                    <label for="roundtrip">Round Trip</label>
+                    <input type="radio" id="oneway" name="tripType" value="oneway">
+                    <label for="oneway">One Way</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="departure">Departure</label>
+                <input type="text" id="departure" placeholder="Comodoro City or Airport Code">
+            </div>
+
+            <div class="form-row">
+                <label for="arrival">Arrival</label>
+                <input type="text" id="arrival" placeholder="Arrival City or Airport Code">
+            </div>
+
+            <div class="form-row">
+                <label for="departureDate">Departure Date</label>
+                <input type="date" id="departureDate">
+            </div>
+
+            <div class="form-row">
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate">
+            </div>
+
+            <div class="form-row">
+                <label for="adults">Adults</label>
+                <select id="adults">
+                    <option value="">Please Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+            </div>
+
+            <div class="form-row">
+                <label for="seniors">Seniors</label>
+                <select id="seniors">
+                    <option value="">Please Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

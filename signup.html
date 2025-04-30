@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style3.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission (stops page reload)
+        
+                // Get form values
+                let firstName = document.querySelector("input[placeholder='Firstname']").value.trim();
+                let lastName = document.querySelector("input[placeholder='Lastname']").value.trim();
+                let email = document.querySelector("input[placeholder='Email']").value.trim();
+                let password = document.querySelector("input[placeholder='Password']").value;
+                let confirmPassword = document.querySelector("input[placeholder='Confirm password']").value;
+        
+                // Validate fields are not empty
+                if (!firstName || !lastName || !email || !password || !confirmPassword) {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+        
+                // Validate passwords match
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                    return;
+                }
+        
+                // Save data to local storage
+                let userData = { firstName, lastName, email, password };
+                localStorage.setItem("user", JSON.stringify(userData));
+        
+                // Show confirmation and redirect on OK
+                alert("Signup successful!");
+            });
+        });
+        </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <p>Signup now and get full access to our app.</p>
+        <form>
+            <div class="name-fields">
+                <input type="text" placeholder="Firstname" required>
+                <input type="text" placeholder="Lastname" required>
+            </div>
+            <input type="email" placeholder="Email" required>
+            <div class="password-field">
+                <input type="password" placeholder="Password" required>
+                <span class="eye-icon">👁</span>
+            </div>
+            <div class="password-field">
+                <input type="password" placeholder="Confirm password" required>
+                <span class="eye-icon">👁</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Website</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: #f8f9fa;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+        
+        /* Positioning and animation for H1 */
+        h1 {
+            font-size: 50px;
+            text-align: left;
+            margin-left: 50px;
+            animation: fadeSlide 2s ease-in-out;
+        }
+
+        /* Positioning and animation for H3 */
+        h3 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 50px;
+            animation: fadeSlide 3s ease-in-out;
+        }
+
+        /* Keyframes for animation */
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="/img/logo1.PNG" class="logo" width="150px" height="90px">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="offer.html">OFFERS</a></li>
+            <li><a href="prat.html">CATEGORIES</a></li>
+            <li><a href="book.html">BOOKING</a></li>
+            <li><a href="home.html">ABOUT US</a></li>
+        </ul>
+    </div>
+
+    <!-- Heading with Animation (Left-aligned) -->
+     <h1>HI, WHERE WOULD <br>
+    YOU LIKE TO GO?</h1>
+    <h3>Discover amazing destinations and travel experiences.<br>Book your next adventure with us.</h3>
+
+</body>
+</html>

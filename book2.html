@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Deals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+            background-color: white;
+            padding: 8px;
+        }
+
+        /* Flight Cards */
+        .flight-card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .flight-card {
+            width: 280px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .flight-card:hover {
+            transform: scale(1.05);
+        }
+
+        .flight-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .flight-card-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .flight-card-details h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .flight-card-details p {
+            margin: 5px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .flight-card-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #D32F2F;
+        }
+
+        /* Book Now Button */
+        .flight-card-button {
+            background: linear-gradient(90deg, #FF512F, #DD2476);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 90%;
+            margin: 10px auto;
+            display: block;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .flight-card-button:hover {
+            background: linear-gradient(90deg, #DD2476, #FF512F);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <img src="/img/lo.jpg" alt="NSA The Laar Miprant Logo">
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Flight Deals Section -->
+    <div class="flight-card-container">
+
+        <div class="flight-card">
+            <img src="/img/del.jpg" alt="Mumbai to Delhi">
+            <div class="flight-card-details">
+                <h3>Mumbai (BOM) to Delhi (DEL)</h3>
+                <p>Depart: 30 Mar 2025</p>
+                <p class="flight-card-price">INR 5,406*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"><button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+
+        <div class="flight-card">
+            <img src="/img/dub.png.jpg" alt="Bangalore to Dubai">
+            <div class="flight-card-details">
+                <h3>Bangalore (BLR) to Dubai (DXB)</h3>
+                <p>Depart: 30 Mar 2025</p>
+                <p class="flight-card-price">INR 95,445*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"><button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+
+        <div class="flight-card">
+            <img src="/img/los.png.jpg" alt="Bangalore to New York">
+            <div class="flight-card-details">
+                <h3>Bangalore (BLR) to New York (NY)</h3>
+                <p>Depart: 11 Apr 2025</p>
+                <p class="flight-card-price">INR 99,157*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"><button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+ <br>
+        <div class="flight-card">
+            <img src="/img/bag.jpeg" alt="Delhi to Bangalore">
+            <div class="flight-card-details">
+                <h3>Delhi (DEL) to Bangalore (BLR)</h3>
+                <p>Depart: 28 Apr 2025</p>
+                <p class="flight-card-price">INR 6,550*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"> <button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+
+        <div class="flight-card">
+            <img src="/img/jap.jpeg" alt="Bangalore to Japan">
+            <div class="flight-card-details">
+                <h3> Bangalore (BLR) to Japan (JP)</h3>
+                <p>Depart: 11 Apr 2025</p>
+                <p class="flight-card-price">INR 66,365*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"><button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+
+        <div class="flight-card">
+            <img src="/img/van.jpg" alt="Delhi to Vancouver">
+            <div class="flight-card-details">
+                <h3>Delhi (DEL) to Vancouver (YVR)</h3>
+                <p>Depart: 26 Apr 2025</p>
+                <p class="flight-card-price">INR 95,445*</p>
+                <p>One Way / Economy Class</p>
+                <a href="book3.html"><button class="flight-card-button">Book Now</button></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

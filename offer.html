@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .offer-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 2px solid #007BFF;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .offer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .offer-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+        .offer-discount {
+            font-size: 1.2em;
+            color: green;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .offer-code-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .offer-code-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exclusive Airline Offers</h1>
+    <div class="offers-container">
+        <div class="offer-card">
+            <div class="offer-title">Summer Special</div>
+            <div class="offer-discount">20% Off</div>
+            <button class="offer-code-button">Use Code: SUMMER20</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Business Class Deal</div>
+            <div class="offer-discount">15% Off</div>
+            <button class="offer-code-button">Use Code: BUSINESS15</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Student Discount</div>
+            <div class="offer-discount">10% Off</div>
+            <button class="offer-code-button">Use Code: STUDENT10</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Weekend Getaway</div>
+            <div class="offer-discount">25% Off</div>
+            <button class="offer-code-button">Use Code: WEEKEND25</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">International Flight Deal</div>
+            <div class="offer-discount">18% Off</div>
+            <button class="offer-code-button">Use Code: INTERNATIONAL18</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Early Bird Discount</div>
+            <div class="offer-discount">12% Off</div>
+            <button class="offer-code-button">Use Code: EARLYBIRD12</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Last-Minute Deal</div>
+            <div class="offer-discount">22% Off</div>
+            <button class="offer-code-button">Use Code: LASTMINUTE22</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Family Travel Offer</div>
+            <div class="offer-discount">30% Off</div>
+            <button class="offer-code-button">Use Code: FAMILY30</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Loyalty Member Discount</div>
+            <div class="offer-discount">20% Off</div>
+            <button class="offer-code-button">Use Code: LOYALTY20</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Holiday Season Sale</div>
+            <div class="offer-discount">35% Off</div>
+            <button class="offer-code-button">Use Code: HOLIDAY35</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Senior Citizen Offer</div>
+            <div class="offer-discount">28% Off</div>
+            <button class="offer-code-button">Use Code: SENIOR28</button>
+        </div>
+        <div class="offer-card">
+            <div class="offer-title">Frequent Flyer Bonus</div>
+            <div class="offer-discount">25% Off</div>
+            <button class="offer-code-button">Use Code: FLYER25</button>
+        </div>
+    </div>
+</body>
+</html>
