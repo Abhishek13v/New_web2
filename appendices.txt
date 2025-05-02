@@ -1,0 +1,33 @@
+
+
+
+
+Appendix A: Regulatory Compliance & Legal Documents
+This section includes documents that outline airline industry regulations:
+- International & National Aviation Regulations– Guidelines from IATA, ICAO, FAA, DGCA, EASA.
+- Passenger Rights & Travel Policies– Compensation rules for delays, cancellations, and lost baggage.
+- Data Protection & Cybersecurity Compliance** – GDPR, CCPA, PCI DSS (Payment Card Industry Data Security Standard).
+- Airline Operational Safety Rules– Aviation safety regulations, crew training protocols.
+
+Appendix B: Technical Documentation**
+Provides details on the website’s backend infrastructure:
+Website Development Stack – Programming languages, frameworks, and database configurations.
+-API Integrations & External Systems – Booking engines (Amadeus, Sabre, Travelport), baggage tracking systems.
+-Cybersecurity & Encryption Standards – Secure payment gateways, firewall settings, fraud detection.
+Reliability Metrics & System Monitoring– MTBF, MTTR, uptime reports for website stability.
+
+
+Appendix C: User Navigation & Booking Guidelines
+Documents covering **how passengers interactwith the website:
+Booking & Reservation Process – Steps to book tickets, seat selection, payment methods.
+- Check-In & Boarding Rules – Online check-in, airport kiosk check-in, boarding pass retrieval.
+- Baggage Handling & Restrictions – Weight limits, special luggage handling, prohibited items.
+- **Refunds & Cancellation Policies** – Refund eligibility, compensation regulations.
+Appendix D: Security & Emergency Protocols**
+Includes website and airline security protocols:
+- Cybersecurity Practices** – Secure transactions, protection against phishing and hacking.
+- Passenger & Airport Security Measures– Biometric verification, screening guidelines.
+Emergency Travel Protocols– Crisis management in case of natural disasters, security threats.
+
+
+ 
