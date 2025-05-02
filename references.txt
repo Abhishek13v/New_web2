@@ -1,0 +1,15 @@
+
+
+
+
+
+W3Schools. (n.d.). HTML Tutorial. Retrieved from https://www.w3schools.com/html/
+  W3Schools. (n.d.). CSS Tutorial. Retrieved from https://www.w3schools.com/css/
+  W3Schools. (n.d.). JavaScript Tutorial. Retrieved from https://www.w3schools.com/js/
+  Bootstrap. (n.d.). Introduction · Bootstrap v5.0. Retrieved from https://getbootstrap.com/docs/5.0/getting-started/introduction/
+  Mozilla Developer Network (MDN). (n.d.). HTML: HyperText Markup Language. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTML
+  Mozilla Developer Network (MDN). (n.d.). JavaScript. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  Upwork. (n.d.). How It Works – Upwork. Retrieved from https://www.upwork.com/i/how-it-works/
+  Freelancer. (n.d.). About Us – Freelancer.com. Retrieved from https://www.freelancer.com/about/
+  Statista. (2023). Number of freelancers in the United States from 2017 to 2028. Retrieved from https://www.statista.com/statistics/921593/freelancers-number-usa/
+  UX Design Institute. (n.d.). Principles of User Interface Design. Retrieved from https://www.uxdesigninstitute.com/blog/user-interface-design-principles
